@@ -1,0 +1,7 @@
+{
+	"usernameBD" : "root",
+	"passwordBD" : "123",
+	"nameBD"	 : "recuerda",
+	"domainBD"	 : "localhost",
+	"adapterMotor" : "mysql"
+}

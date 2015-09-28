@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="javascripts/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="javascripts/general.js"></script>
+
+    <title><%= titulo %></title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div>
+      
+      <header>
+        <div class="page-header">
+          <div class="row">
+            <div class="col-lg-12"><h1>Pendiente de por definir</h1></div>
+          </div>
+        </div>
+
+        <% if(typeof mensajeAlerta != 'undefined'){ %>
+          <div class="col-sm-12" id="mensajeAlerta">
+            <div class="alert <%= mensajeAlerta.clase %> alert-dismissible" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="cerrarAlerta()">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <strong><%= mensajeAlerta.mensaje[0] %></strong> <%= mensajeAlerta.mensaje[1] %>
+            </div>
+          </div>
+        <%}%>
+      </header>
+      
+      <section class="main" id="s1">
+        <div class="container-fluid"><%- body %></div>
+      </section>
+
+      <footer class="main" id="f1">
+        <a href="#"></a>
+      </footer>
+
+    </div>
+  </body>
+</html>
